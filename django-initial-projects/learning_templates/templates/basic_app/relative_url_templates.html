@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+</head>
+<body>
+   
+   
+    <h1>Welcome!</h1>
+    <p>
+      This page serves as an example of how to
+      use relative urls with templates!
+      This is the relative_url_templates.html file.
+    </p>
+
+    {# Here are the examples:#}
+    {# Must set the app_name=basic_app variable inside the basic_app/urls.py#}
+    <a href="{% url 'admin:index' %}">Link to Admin Page</a>
+
+    <a href="{% url 'basic_app:other' %}">Link to other.html</a>
+    
+</body>
+</html>
